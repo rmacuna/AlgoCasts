@@ -17,6 +17,28 @@
 //       '### ' -- n - 3
 //       '####' -- 0
 
+// Recursive solution
+
+// function steps(n, row = 0, stair = "") {
+//   if (row === n) {
+//     return;
+//   }
+
+//   if (n === stair.length) {
+//     console.log(stair);
+//     steps(n, row + 1);
+//     return;
+//   }
+
+//   if (stair.length <= row) {
+//     stair += "#";
+//   } else {
+//     stair += " ";
+//   }
+
+//   steps(n, row, stair);
+// }
+
 function steps(n) {
   // Guard: Prevent continue if n <= 0
   if (n <= 0) return "";
